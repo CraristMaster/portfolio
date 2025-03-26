@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Skills</title>
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #00abf0, #125d98);
+      background-attachment: fixed;
+      color: #333;
+      animation: backgroundAnimation 6s ease infinite;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      background-image: url('https://via.placeholder.com/1920x600'); /* Placeholder image */
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      padding: 40px 20px;
+      margin: 0;
+      font-size: 36px;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    .general-container {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .header-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #125d98;
+      padding: 15px;
+      margin: 0;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .header-links a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .header-links a:hover {
+      background-color: #f4a261;
+      color: black;
+    }
+
+    .skills-content {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .skills-content h2 {
+      color: #00abf0;
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-bottom: 15px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .skills-content p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .skills-content ul {
+      text-align: left;
+      margin: 20px auto;
+      padding: 0 20px;
+      list-style-type: disc;
+    }
+
+    .skills-content ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #125d98;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+        padding: 30px 15px;
+      }
+
+      .header-links a {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+
+      .skills-content {
+        padding: 20px;
+      }
+
+      .skills-content h2 {
+        font-size: 20px;
+      }
+
+      .skills-content p {
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 20px;
+        padding: 20px 10px;
+      }
+
+      .header-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-links a {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+
+      .skills-content {
+        padding: 15px;
+      }
+
+      .skills-content h2 {
+        font-size: 18px;
+      }
+
+      .skills-content p {
+        font-size: 12px;
+      }
+
+      .footer {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Skills</h1>
+  <div class="general-container">
+    <div class="header-links">
+      <a href="index.html">Home</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About Us</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+    </div>
+    <div class="skills-content">
+      <h2>Key Programming Skills</h2>
+      <p>
+        Our expertise spans a variety of programming languages and frameworks. Whether it's building responsive websites, developing efficient algorithms, or crafting dynamic applications, we excel at:
+      </p>
+      <ul>
+        <li>Languages: HTML, CSS, JavaScript, Python, Java, and C++.</li>
+        <li>Frameworks: React, Angular, Django, Flask, and Spring Boot.</li>
+        <li>Database Management: MySQL, PostgreSQL, MongoDB, and Firebase.</li>
+        <li>Version Control: Git and GitHub for collaborative projects.</li>
+        <li>AI & Machine Learning: TensorFlow, PyTorch, and OpenCV for cutting-edge solutions.</li>
+      </ul>
+
+      <h2>Text-Typing Skills</h2>
+      <p>
+        Precision and speed are critical in programming and technical documentation. Our team boasts:
+      </p>
+      <ul>
+        <li>Typing Speed: Over 80 words per minute with high accuracy.</li>
+        <li>Proficiency in Markdown for technical writing.</li>
+        <li>Skilled in documentation tools like JIRA, Confluence, and Notion.</li>
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; 2025 by Crarist Master
+    </div>
+  </div>
+</body>
+</html>
