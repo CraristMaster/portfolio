@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="welcome.css" />
+  <style>
+  /* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: linear-gradient(270deg, #00abf0, #000000);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.general-content {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 171, 240, 0.2);
+  border-radius: 5px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-links a:hover {
+  background-color: #00abf0;
+  color: black;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home-portfolio {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.home-portfolio img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  animation: slideInLeft 2s ease-in-out;
+  border: 3px solid #00abf0;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h1, h3, p {
+  opacity: 0;
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #00abf0;
+  animation-delay: 0.5s;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  animation-delay: 1s;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 20px 0;
+  animation-delay: 1.5s;
+  color: #f3f3f3;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-sci {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-sci a {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-sci a:hover {
+  background-color: #00abf0;
+  color: black;
+  transform: scale(1.2);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #00abf0;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.footer span {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-links a {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-portfolio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-portfolio img {
+    margin: 0 auto 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .home-sci {
+    flex-wrap: wrap;
+  }
+
+  .home-sci a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .home-portfolio img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer span {
+    font-size: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="general-content">
+    <div class="header-links">
+      <a href="/home/student/cachedir/packages/hekima_works/iS3xt9oY.jpeg" class="logo">Crarist Master</a>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About Us</a>
+    </div>
+
+    <div class="home-portfolio">
+      <img src="/home/student/trash/packages/hekima_works/IMG_20240105_165301.jpg" alt="Portfolio Image">
+      <div>
+        <h1>Hello, I'm Crarist Master.</h1>
+        <h3>A programmer with record-breaking typing speed!</h3>
+        <p>In this portfolio, you'll see the incredible work I've performed in the world. Technology is advancing rapidly, and without computer workers, the world wouldn't continue moving forward. This portfolio highlights my contributions and achievements. Thank you for visiting!</p>
+      </div>
+    </div>
+
+    <div class="home-sci">
+      <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://www.youtube.com/@craristcode"><i class='bx bxl-youtube'></i></a>
+      <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://www.tiktok.com/@craristmaster1?is_from_webapp=1&sender_device=pc"><i class='bx bxl-tiktok'></i></a>
+      <a href="https://calendar.yahoo.com"><i class='bx bxl-yahoo'></i></a>
+      <a href="https://github.com/CraristMaster/computer-science-profile"><i class='bx bxl-github'></i></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>&copy; 2025 by Crarist Master</span>
+  </div>
+</body>
+</html>
