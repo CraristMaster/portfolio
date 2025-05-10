@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #081b29;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #00abf0;
+      color: black;
+    }
+
+    .home-portfolio {
+      text-align: center;
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    /* Text animation */
+    h1 {
+      font-size: 2.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+
+    .home-sci {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .home-sci a {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 2px solid #00abf0;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .home-sci a:hover {
+      background-color: #00abf0;
+      color: black;
+      transform: scale(1.2);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: rgba(0, 171, 240, 0.8);
+      color: black;
+      border-radius: 10px;
+    }
+
+    .footer span {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo">Crarist Master</a>
+    <div>
+      <a href="personal_portifolio.html">Home</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+    </div>
+  </div>
+
+  <div class="home-portfolio">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I'm Crarist Master, a dedicated programmer with a vision for innovation and technology. Explore my portfolio to see my projects, skills, and experiences that demonstrate my contributions to the tech world. Let's move forward together in the spirit of science and technology!</p>
+  </div>
+
+  <div class="home-sci">
+    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+    <a href=""><i class='bx bxl-instagram'></i></a>
+    <a href=""><i class='bx bxl-tiktok'></i></a>
+    <a href=""><i class='bx bxl-yahoo'></i></a>
+    <a href=""><i class='bx bxl-github'></i></a>
+  </div>
+
+  <div class="footer">
+    <span>&copy; 2025 Crarist Master</span>
+    <span>Email: craristmaster@yahoo.com</span>
+    <span>Phone: +255-768-6471-37</span>
+    <span>Site: Arusha,Tanzania</span>
+  </div>
+</body>
+</html>
