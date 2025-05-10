@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About us</title>
+  <title>About Me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-image: url('https://via.placeholder.com/1920x1080'); /* Placeholder for background image */
-      background-color: #081b29;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
       color: white;
+      text-align: center;
+      animation: backgroundChange 15s infinite alternate;
+    }
+
+    @keyframes backgroundChange {
+      0% { background: linear-gradient(to right, #081b29, #00abf0); }
+      25% { background: linear-gradient(to right, #1a2e40, #0099cc); }
+      50% { background: linear-gradient(to right, #002244, #00ccff); }
+      75% { background: linear-gradient(to right, #081b29, #0088ff); }
+      100% { background: linear-gradient(to right, #081b29, #00abf0); }
     }
 
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 0 0 20px 20px;
-      transition: all 0.3s ease-in-out;
+      padding: 15px 25px;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid #00abf0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .header a {
       color: white;
       text-decoration: none;
-      padding: 10px 20px;
-      transition: background-color 0.3s, color 0.3s;
+      padding: 12px 20px;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
 
     .header a:hover {
-      background-color: #00abf0;
+      background: #00abf0;
       color: black;
       border-radius: 5px;
     }
 
-    .header a.logo {
-      font-size: 25px;
+    .logo {
+      font-size: 28px;
       font-weight: bold;
     }
 
@@ -55,93 +62,94 @@
     }
 
     .home-sci a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: #00abf0;
-      transition: transform 0.3s ease, color 0.3s;
+      margin: 0 12px;
+      font-size: 26px;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     .home-sci a:hover {
-      color: white;
-      transform: scale(1.2);
+      color: #00abf0;
+      transform: scale(1.3);
     }
 
     .about-section {
-      margin: 50px 20px;
-      text-align: center;
-    }
-
-    .about-section h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .about-section p {
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #00abf0;
-      border-radius: 10px;
-      margin: 20px auto;
-      color: black;
-      font-weight: 600;
+      margin: 60px auto;
+      width: 80%;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in-out;
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
+        transform: translateY(-20px);
       }
       to {
         opacity: 1;
+        transform: translateY(0);
       }
     }
 
-    .animated {
-      animation: fadeIn 2s ease-in-out;
+    @media screen and (max-width: 768px) {
+      .about-section {
+        width: 90%;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-sci a {
+        font-size: 22px;
+      }
+
+      .about-section h1 {
+        font-size: 36px;
+      }
+
+      .about-section p {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <a href="#default" class="logo">Crarist Master</a>
+    <a href="#" class="logo">Crarist Master</a>
     <div>
       <a href="index.html">Home</a>
-      <a href="about us.html">About</a>
+      <a href="about.html">About</a>
       <a href="skills.html">Skills</a>
       <a href="experience.html">Experience</a>
-      <a href="/home/student/trash/packages/hekima_works/contacts.html">Contact</a>
+      <a href="contacts.html">Contact</a>
     </div>
   </div>
 
-  <div class="home-sci animated">
+  <div class="home-sci">
     <a href="#"><i class='bx bxl-facebook-circle'></i></a>
     <a href="#"><i class='bx bxl-instagram'></i></a>
     <a href="#"><i class='bx bxl-tiktok'></i></a>
     <a href="#"><i class='bx bxl-github'></i></a>
   </div>
 
-  <div class="about-section animated" id="about">
-     <h1>About Me</h1>
+  <div class="about-section" id="about">
+    <h1>About Me</h1>
     <p>
-      Hello! My name is <strong>Hekima</strong>, and I am a passionate programming student eager to explore the limitless possibilities of technology. With a deep curiosity for coding and innovation, 
-      I am continually learning and expanding my skills in various programming languages and development frameworks. My journey into programming started with a fascination for how software can transform the world, 
-      and since then, I have been dedicated to honing my craft.
+      Hello! My name is <strong>Hekima</strong>, and I am a passionate programming student eager to explore the limitless possibilities of technology. 
+      With a deep curiosity for coding and innovation, I am continually learning and expanding my skills in various programming languages and development frameworks.
     </p>
     <p>
-      My areas of interest include <strong>web development, mobile applications, artificial intelligence, and problem-solving through code</strong>. I thrive on challenges and enjoy working on projects that push me to think critically and creatively.
-      Beyond technical skills, I value teamwork, collaboration, and continuous learning, always seeking opportunities to improve and contribute to the tech community.
+      My areas of interest include <strong>web development, mobile applications, artificial intelligence, and problem-solving through code</strong>. 
+      I thrive on challenges and enjoy working on projects that push me to think critically and creatively. Beyond technical skills, I value teamwork, collaboration, and continuous learning.
     </p>
     <p>
       My ultimate goal is to build meaningful digital solutions that make a positive impact on people’s lives. As I continue this journey, I look forward to learning, growing, and embracing the exciting future of technology!
     </p>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 by Crarist Master
   </div>
 </body>
 </html>
