@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('https://via.placeholder.com/1920x1080'); /* Placeholder for background image */
+      background-color: #081b29;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 0 0 20px 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header a:hover {
+      background-color: #00abf0;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .home-sci {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .home-sci a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #00abf0;
+      transition: transform 0.3s ease, color 0.3s;
+    }
+
+    .home-sci a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+    .about-section {
+      margin: 50px 20px;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #00abf0;
+      border-radius: 10px;
+      margin: 20px auto;
+      color: black;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .animated {
+      animation: fadeIn 2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo">Crarist Master</a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about us.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="/home/student/trash/packages/hekima_works/contacts.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="home-sci animated">
+    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-tiktok'></i></a>
+    <a href="#"><i class='bx bxl-github'></i></a>
+  </div>
+
+  <div class="about-section animated" id="about">
+    <h1>About Us</h1>
+    <p>
+      Welcome to Crarist Master, where creativity meets technology! We are a group of passionate programmers dedicated to building innovative and user-friendly software solutions. With expertise in web development, mobile apps, and AI technologies, we aim to empower individuals and businesses to thrive in the digital era.
+    </p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 by Crarist Master
+  </div>
+</body>
+</html>
