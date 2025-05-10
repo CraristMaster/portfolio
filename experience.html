@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>experience</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #081b29;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+    }
+
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .header a.logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #00abf0;
+      color: black;
+    }
+
+    .header-right a.active {
+      background-color: #00abf0;
+      color: black;
+    }
+
+    .home-portfolio {
+      text-align: center;
+      margin-top: 50px;
+      padding: 0 10%;
+    }
+
+    /* Text animation */
+    h1 {
+      font-size: 2.5rem;
+      animation: fadeInScale 2s ease-in-out;
+    }
+
+    @keyframes fadeInScale {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .home-portfolio p {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .home-sci {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .home-sci a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      background: transparent;
+      border: 2px solid #00abf0;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+    }
+
+    .home-sci a:hover {
+      background-color: #00abf0;
+      color: black;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 10px;
+      background-color: #00abf0;
+      border-radius: 5px;
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo">Crarist Master</a>
+    <div class="header-right">
+      <a class="active" href="personal_portifolio.html">Home</a>
+      <a href="contacts.html">Contact</a>
+      <a href="about us.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+    </div>
+  </div>
+
+  <div class="home-portfolio">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+      Being a programmer is like being a modern-day wizard, conjuring solutions out of lines of code. The journey involves:
+      <ol>
+        <li>Problem-solving</li>
+        <li>Continuous learning</li>
+        <li>Creativity</li>
+        <li>Collaboration</li>
+        <li>Satisfaction of impactful work</li>
+        <li>Overcoming challenges</li>        
+        but also i am a student of edmund rice sinon sec school.
+        I learning programming
+      </ol>
+    </p>
+  </div>
+
+  <div class="home-sci">
+    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-tiktok'></i></a>
+    <a href="#"><i class='bx bxl-yahoo'></i></a>
+    <a href="#"><i class='bx bxl-github'></i></a>
+  </div>
+
+  <div class="footer">
+    <span>© 2025 Crarist Master</span>
+  </div>
+</body>
+</html>
